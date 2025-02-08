@@ -159,6 +159,11 @@ _G.packer_plugins = {
     path = "/home/sebastian/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/home/sebastian/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
+  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/home/sebastian/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
@@ -178,6 +183,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/sebastian/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
+  },
+  ["nvim-dbee"] = {
+    loaded = true,
+    path = "/home/sebastian/.local/share/nvim/site/pack/packer/start/nvim-dbee",
+    url = "https://github.com/kndndrj/nvim-dbee"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
@@ -243,11 +253,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/sebastian/.local/share/nvim/site/pack/packer/start/promise-async",
     url = "https://github.com/kevinhwang91/promise-async"
-  },
-  ["tabnine-nvim"] = {
-    loaded = true,
-    path = "/home/sebastian/.local/share/nvim/site/pack/packer/start/tabnine-nvim",
-    url = "https://github.com/codota/tabnine-nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
