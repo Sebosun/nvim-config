@@ -28,20 +28,17 @@ vim.cmd([[
     autocmd!
     autocmd User AlphaReady set showtabline=0 | autocmd BufUnload <buffer> set showtabline=2
   augroup end
-
-  " augroup _lsp
-  "   autocmd!
-  "   autocmd BufWritePre * lua vim.lsp.buf.format()
-  " augroup end
 ]])
 
 local function disable_copilot_for_go()
 	local disabled_filetypes = { "go", "lua" }
 
-	for i, val in ipairs(disabled_filetypes) do
+	for _, val in ipairs(disabled_filetypes) do
 		if vim.bo.filetype == val then
-			print("Disabling Copilot for " .. val)
-			vim.cmd("Copilot disable")
+            -- handled in copilot.lua now
+            --[[ print(require("copilot").disable) ]]
+            --[[ require("copilot").disable() ]]
+			--[[ vim.cmd("Copilot disable") ]]
 		end
 	end
 end
