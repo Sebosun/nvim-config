@@ -34,6 +34,7 @@ require("copilot").setup({
 		gitcommit = false,
 		gitrebase = false,
 		hgcommit = false,
+        go = false,
 		svn = false,
 		cvs = false,
 		["."] = false,

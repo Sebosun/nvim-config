@@ -9,6 +9,7 @@ npairs.setup({
 	ts_config = {
 		lua = { "string", "source" },
 		javascript = { "string", "template_string" },
+        vue = {"string", "template_string", "comment"},
 		java = false,
 	},
 	disable_filetype = { "TelescopePrompt", "spectre_panel" },

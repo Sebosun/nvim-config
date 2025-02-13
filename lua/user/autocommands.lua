@@ -30,19 +30,19 @@ vim.cmd([[
   augroup end
 ]])
 
-local function disable_copilot_for_go()
-	local disabled_filetypes = { "go", "lua" }
+--[[ set tabs for web development ]]
+local function tabs_for_web()
+	local disabled_filetypes = { "vue", "react" }
 
 	for _, val in ipairs(disabled_filetypes) do
 		if vim.bo.filetype == val then
-            -- handled in copilot.lua now
-            --[[ print(require("copilot").disable) ]]
-            --[[ require("copilot").disable() ]]
-			--[[ vim.cmd("Copilot disable") ]]
+
+            vim.opt['shiftwidth'] = 2
+            vim.opt['tabstop'] = 2
 		end
 	end
 end
 
 vim.api.nvim_create_autocmd("FileType", {
-	callback = disable_copilot_for_go,
+	callback = tabs_for_web,
 })
